@@ -23,7 +23,10 @@ pre, table, fieldset, hr {
 .page-content {
   margin: 0 auto;
   width: 980px;
-  min-height: 400px; }
+  min-height: 400px;
+  text-align: center; }
+  .page-content ul {
+    list-style: none; }
 
 ::-moz-selection {
   background: #d4281b;
