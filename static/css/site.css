@@ -114,7 +114,7 @@ a {
   z-index: -1; }
 
 .parallax-1 {
-  background: url("static/images/background-1.png") repeat-x center;
+  background: url("/shmupfest/static/images/background-1.png") repeat-x center;
   -webkit-animation: slide 12s linear infinite;
   -moz-animation: slide 12s linear infinite;
   -ms-animation: slide 12s linear infinite;
