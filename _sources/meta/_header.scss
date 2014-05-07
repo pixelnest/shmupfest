@@ -112,12 +112,12 @@
 }
 
 .parallax-2 {
-  background: url("/static/images/background-2.png") repeat-x center;
+  background: url("/shmupfest/static/images/background-2.png") repeat-x center;
   @include slide-anim(9s);
 }
 
 .parallax-3 {
-  background: url("/static/images/background-3.png") repeat-x center;
+  background: url("/shmupfest/static/images/background-3.png") repeat-x center;
   @include slide-anim(6s);
 }
 
