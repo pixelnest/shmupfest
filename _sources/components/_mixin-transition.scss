@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// -------------------------------------------------------
+// @mixin transition(property, duration, method: ease)
+// -------------------------------------------------------
+
+@mixin transition($prop, $time, $method: ease) {
+  -webkit-transition: $prop $time $method;
+  -moz-transition:    $prop $time $method;
+  -ms-transition:     $prop $time $method;
+  -o-transition:      $prop $time $method;
+  transition:         $prop $time $method;
+}

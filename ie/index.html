@@ -1,0 +1,45 @@
+---
+layout: simple
+---
+
+<head>
+  {% include meta.html %}
+
+  <!-- Style for IE8- -->
+  <style type="text/css">
+    html {
+      background: #FAFAFA;
+    }
+
+    .ie__content {
+      margin: 0 auto;
+      padding-top: 50px;
+      width: 500px;
+    }
+
+    .ie__content p {
+      margin-bottom: 20px;
+    }
+
+    .ie__footer {
+      padding-top: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="page" class="page ie">
+    <div class="ie__content">
+      <p>DESOLE, CE SITE NE FONCTIONNE PAS SUR VOTRE VERSION D'INTERNET EXPLORER (VOTRE NAVIGATEUR INTERNET).</p>
+      <p>METTEZ A JOUR CELUI-CI (VIA WINDOWS UPDATE), OU UTILISEZ UNE DES ALTERNATIVES SUIVANTES :</p>
+      <ul>
+        <li><a href="http://chrome.google.com/" title="Chrome">Google Chrome</a></li>
+        <li><a href="http://download.mozilla.org/" title="Firefox">Mozilla Firefox</a></li>
+      </ul>
+    </div>
+
+    <p class="ie__footer">
+      © 2014 <a href="http://pixelnest.io/" title="Pixelnest Studio">Pixelnest Studio</a> et <a title="Stunfest" href="http://stunfest.fr/">Stunfest/3 Hit Combo</a>
+    </p>
+  </div>
+</body>

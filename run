@@ -1,0 +1,4 @@
+#!/bin/sh
+
+jekyll serve --watch &
+scss _sources/site.scss:static/css/site.css -w

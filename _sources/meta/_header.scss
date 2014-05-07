@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+// -------------------------------------------------------
+// Mixin
+// -------------------------------------------------------
+
+@mixin slide-anim($duration) {
+  -webkit-animation: slide $duration linear infinite;
+  -moz-animation:    slide $duration linear infinite;
+  -ms-animation:     slide $duration linear infinite;
+  -o-animation:      slide $duration linear infinite;
+  animation:         slide $duration linear infinite;
+}
+
+// -------------------------------------------------------
+// Header back
+// -------------------------------------------------------
+
+.page-back {
+  display: table;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+
+  .back {
+    display: table-cell;
+  }
+
+  .hashtag {
+    display: table-cell;
+    text-align: right;
+  }
+
+  @include box-sizing(border-box);
+}
+
+// -------------------------------------------------------
+// Header
+// -------------------------------------------------------
+
+.page-header {
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 400px;
+
+  background-color: #161617;
+  border-bottom: 4px solid #dddddd;
+
+  color: white;
+  text-align: center;
+
+  z-index: 1;
+}
+
+.page-homelink {
+  color: white;
+  border: none;
+  outline: none;
+
+  &:hover, &:focus, &:visited, &:active {
+    color: white;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.page-splash {
+  padding: 10px 0;
+  max-width: 100%;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.menu {
+  position: absolute;
+  top: 10px; left: 10px;
+  width: 100%;
+}
+
+.links {
+  margin: 0 auto;
+  max-width: 736px;
+
+  text-align: left;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+// -------------------------------------------------------
+// Parallax
+// -------------------------------------------------------
+
+.parallax {
+  position: absolute;
+  top: 0; left: 0;
+
+  width: 100%;
+  height: 400px;
+
+  z-index: -1;
+}
+
+.parallax-1 {
+  background: url("static/images/background-1.png") repeat-x center;
+  @include slide-anim(12s);
+}
+
+.parallax-2 {
+  background: url("/static/images/background-2.png") repeat-x center;
+  @include slide-anim(9s);
+}
+
+.parallax-3 {
+  background: url("/static/images/background-3.png") repeat-x center;
+  @include slide-anim(6s);
+}
+
+// -------------------------------------------------------
+// Slides anims
+// -------------------------------------------------------
+
+@-webkit-keyframes slide {
+  from { background-position: 0px;    }
+  to   { background-position: 2000px; }
+}
+
+@-moz-keyframes slide {
+  from { background-position: 0px;    }
+  to   { background-position: 2000px; }
+}
+
+@-o-keyframes slide {
+  from { background-position: 0px;    }
+  to   { background-position: 2000px; }
+}
+
+@keyframes slide {
+  from { background-position: 0px;    }
+  to   { background-position: 2000px; }
+}

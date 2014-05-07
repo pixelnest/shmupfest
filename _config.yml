@@ -1,0 +1,10 @@
+name: Shmupfest
+
+# Code
+exclude: ['_sources', '_raws', '.gitignore', 'run', 'Gemfile*']
+
+# Publishing
+show_drafts: nil
+
+# Markdown formatter
+markdown: redcarpet

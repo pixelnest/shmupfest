@@ -1,0 +1,43 @@
+---
+layout: simple
+---
+
+<head>
+  {% include meta.html %}
+
+  <style type="text/css">
+    .page {
+      background: white;
+    }
+    .page-content {
+      width: 1024px;
+    }
+  </style>
+</head>
+<body>
+  <div id="page" class="page">
+
+  	<header class="page-back">
+  		<a class="back" href="/">RETOUR AU SITE</a>
+  		<a class="hashtag" href="https://twitter.com/search?q=%23shmupfest&src=hash">#shmupfest</a>
+		</header>
+
+    <div class="page-content misc">
+      <div class="content">
+        <div id="unityPlayer">
+          <div class="missing">
+            <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+              <img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </div>
+
+  {% include unity.html %}
+  {% include js.html %}
+</body>
+</html>
